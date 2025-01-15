@@ -13,7 +13,7 @@
   --white-color: #fff;
   --dark-color: #E3B83B;
   --primary-color: #13237B;
-  --secondary-color: #13237B;
+  --secondary-color: #E3B83B;
   --light-pink-color: #faf4f5;
   --medium-gray-color: #ccc;
 
@@ -213,6 +213,7 @@ header .navbar {
   height: auto;
   object-fit: cover; /* Ensures the image covers the container */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 45px;
 }
 
 .hero-image-wrapper:hover .hero-image {
