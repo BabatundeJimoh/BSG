@@ -15,7 +15,8 @@
         }
 
         body {
-            background: linear-gradient(120deg, #f3f4f6, #e3e4e6);
+           background-color:#0f1d63 ;
+           color: white;
             padding: 20px;
         }
 
@@ -23,7 +24,7 @@
            
         
             padding: 20px;
-           
+        
             animation: fadeIn 1.5s ease-in-out;
             margin: 20px auto;
         }
@@ -46,11 +47,39 @@
             margin: 0 auto 20px;
         }
 
-        .btn-primary {
-            background-color: #13237B;
-            border: none;
-            transition: background-color 0.3s ease;
-        }
+      
+        
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+    background-color:  #D4AF37; /* Bootstrap-like primary blue color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover and Active Effects */
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-primary:active {
+    background-color: #004085;
+    transform: scale(1);
+}
 
         .btn-primary:hover {
             background-color: #0f1d63;
@@ -87,9 +116,12 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="form-container">
-                    <h2><img src="images/formimage.JPG" alt="Form Image" style="width: 2zpx;"></h2>
+                    <div style="text-align: center;">
+                        <img src="images/formimage.JPG" alt="Form Image" class="img-fluid rounded" style="max-width: 100%; height: auto;width: 380px;">
+                    </div>
+                    
                     <form id="fundingForm">
-                        <div class="row mb-3">
+                        <div class="row mb-3" style="padding-top: 40px;">
                             <div class="col-md-6">
                                 <label for="firstName" class="form-label">First Name</label>
                                 <input type="text" class="form-control" id="firstName" required>
