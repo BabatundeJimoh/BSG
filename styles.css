@@ -255,11 +255,12 @@ header .navbar {
 }
 .menu-image {
   padding: 30px; /* Add consistent padding */
-  height: 300px; /* Set a consistent height */
-  width: 85%; /* Keep the image responsive */
-  object-fit: cover; /* Ensure proper scaling */
+  height: 300px; /* Keep height consistent */
+  width: 85%; /* Maintain a responsive width */
+  object-fit: contain; /* Ensure the full image is visible without cropping */
   display: block; /* Ensure it behaves as a block element */
   margin: 0 auto; /* Center the image horizontally */
+  
 }
 
 .menu-section .menu-list {
@@ -268,7 +269,6 @@ header .navbar {
   flex-wrap: wrap;
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
-
 }
 
 .menu-section .menu-list .menu-item {
@@ -306,6 +306,7 @@ header .navbar {
     width: 100%; /* Ensure full width */
     height: auto; /* Maintain aspect ratio */
     margin: 0 auto; /* Center the image */
+    object-fit: contain; /* Ensure the entire image fits */
   }
 }
 
